@@ -1,3 +1,18 @@
+<?php
+session_start();
+// Start session if user manually navigates here while logged in? optional. 
+// For now, let's just handle the form submission or simple "if logged in go to index"
+if (isset($_SESSION['user_id'])) {
+    header('Location: index.php');
+    exit;
+}
+if ($_SERVER['REQUEST_METHOD'] === 'POST') {
+    // In a real app, validation & DB insert would happen here
+    $_SESSION['user_id'] = 1; // Dummy user ID
+    header('Location: index.php');
+    exit;
+}
+?>
 <!DOCTYPE html>
 <html lang="en">
 <head>
@@ -28,7 +43,7 @@
                 <p class="text-muted text-sm">Create your account</p>
             </div>
 
-            <form action="index.php" method="GET"> 
+            <form action="sign-up.php" method="POST"> 
                 <div class="mb-3">
                     <label class="form-label">Full Name</label>
                     <input type="text" class="form-control" placeholder="John Doe" required>

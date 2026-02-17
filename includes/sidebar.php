@@ -92,10 +92,11 @@
         <!-- Profile -->
     
         <!-- Sign In -->
+        <!-- Logout -->
         <li class="nav-item">
-            <a href="/dashboard/login.php" class="nav-link">
-                <i class="bi bi-box-arrow-in-right"></i>
-                Sign In
+            <a href="/dashboard/logout.php" class="nav-link">
+                <i class="bi bi-box-arrow-right"></i>
+                Logout
             </a>
         </li>
         <!-- Sign Up -->

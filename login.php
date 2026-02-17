@@ -1,4 +1,11 @@
 <?php
+session_start();
+// Check if already logged in
+if (isset($_SESSION['user_id'])) {
+    header('Location: index.php');
+    exit;
+}
+
 // Simple hardcoded login for demonstration
 $error = '';
 if ($_SERVER['REQUEST_METHOD'] === 'POST') {
@@ -9,6 +16,10 @@ if ($_SERVER['REQUEST_METHOD'] === 'POST') {
     // Email: admin@material.com
     // Password: admin
     if ($email === 'admin@material.com' && $password === 'admin') {
+        // Set Session
+        $_SESSION['user_id'] = 1;
+        $_SESSION['email'] = $email;
+        
         // Redirect to dashboard
         header('Location: index.php');
         exit;

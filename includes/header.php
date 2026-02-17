@@ -1,3 +1,9 @@
+<?php
+// Determine the absolute path to the includes folder
+// This handles different directory depths (e.g., /, /user/, /tables/)
+$root_path = $_SERVER['DOCUMENT_ROOT'] . '/dashboard/';
+include_once $root_path . 'includes/auth_session.php';
+?>
 <!DOCTYPE html>
 <html lang="en">
 <head>
