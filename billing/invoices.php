@@ -1,6 +1,6 @@
-<?php include 'includes/header.php'; ?>
+<?php include '../includes/header.php'; ?>
     <!-- Sidebar -->
-    <?php include 'includes/sidebar.php'; ?>
+    <?php include '../includes/sidebar.php'; ?>
     
     <!-- Main Panel -->
     <main class="main-content">
@@ -8,8 +8,8 @@
         <header class="top-header">
             <div class="breadcrumb-nav">
                 <button class="menu-toggle"><i class="bi bi-list"></i></button>
-                <span>Pages</span> / <span class="text-main font-bold">Billing</span>
-                <h1 class="page-title">Billing</h1>
+                <span>Pages</span> / <span>Billing</span> / <span class="text-main font-bold">Invoices</span>
+                <h1 class="page-title">Invoices</h1>
             </div>
         </header>
 
@@ -272,6 +272,6 @@
 
 </div>
 
-<script src="assets/js/script.js"></script>
+<script src="/dashboard/assets/js/script.js"></script>
 </body>
 </html>

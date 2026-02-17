@@ -1,6 +1,6 @@
-<?php include 'includes/header.php'; ?>
+<?php include '../includes/header.php'; ?>
     <!-- Sidebar -->
-    <?php include 'includes/sidebar.php'; ?>
+    <?php include '../includes/sidebar.php'; ?>
 
     <main class="main-content">
         <!-- Top Header -->
@@ -123,6 +123,6 @@
     </main>
 
 </div> <!-- Close Wrapper -->
-<script src="assets/js/script.js"></script>
+<script src="/dashboard/assets/js/script.js"></script>
 </body>
 </html>

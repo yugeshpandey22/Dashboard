@@ -1,27 +1,27 @@
 <?php
-// Table Graphs Logic
+// Table Graphs Logic (Neutral Color)
 function generateMiniLineChart() {
     return '
     <svg viewBox="0 0 50 20" preserveAspectRatio="none" style="width:50px; height:25px;">
-        <path d="M0,15 Q5,10 10,12 T20,8 T30,15 T40,5 T50,10" fill="none" stroke="#4caf50" stroke-width="2" />
+        <path d="M0,15 Q5,10 10,12 T20,8 T30,15 T40,5 T50,10" fill="none" stroke="#7b809a" stroke-width="2" />
     </svg>';
 }
 function generateMiniBarChart() {
     return '
     <svg viewBox="0 0 50 20" preserveAspectRatio="none" style="width:50px; height:25px;">
-        <rect x="0" y="5" width="4" height="15" fill="#e91e63" />
-        <rect x="6" y="10" width="4" height="10" fill="#e91e63" />
-        <rect x="12" y="2" width="4" height="18" fill="#e91e63" />
-        <rect x="18" y="8" width="4" height="12" fill="#e91e63" />
-        <rect x="24" y="12" width="4" height="8" fill="#e91e63" />
-        <rect x="30" y="4" width="4" height="16" fill="#e91e63" />
+        <rect x="0" y="5" width="4" height="15" fill="#7b809a" />
+        <rect x="6" y="10" width="4" height="10" fill="#7b809a" />
+        <rect x="12" y="2" width="4" height="18" fill="#7b809a" />
+        <rect x="18" y="8" width="4" height="12" fill="#7b809a" />
+        <rect x="24" y="12" width="4" height="8" fill="#7b809a" />
+        <rect x="30" y="4" width="4" height="16" fill="#7b809a" />
     </svg>';
 }
 ?>
 
-<?php include 'includes/header.php'; ?>
+<?php include '../includes/header.php'; ?>
     <!-- Sidebar -->
-    <?php include 'includes/sidebar.php'; ?>
+    <?php include '../includes/sidebar.php'; ?>
     
     <!-- Main Panel -->
     <main class="main-content">
@@ -29,8 +29,8 @@ function generateMiniBarChart() {
         <header class="top-header">
             <div class="breadcrumb-nav">
                 <button class="menu-toggle"><i class="bi bi-list"></i></button>
-                <span>Pages</span> / <span class="text-main font-bold">Tables</span>
-                <h1 class="page-title">Tables</h1>
+                <span>Pages</span> / <span>Tables</span> / <span class="text-main font-bold">Basic Tables</span>
+                <h1 class="page-title">Basic Tables</h1>
             </div>
             
              <div class="header-actions">
@@ -48,7 +48,7 @@ function generateMiniBarChart() {
         </header>
 
         <!-- Authors Table -->
-        <div class="card mb-4">
+        <div class="card mb-4" style="margin-top: 1rem;">
             <div class="card-header-stats bg-primary-grad" style="position: absolute; top: -20px; left: 1rem; right: 1rem; height: auto; min-height: auto; padding: 1rem; border-radius: 0.5rem; justify-content: space-between; align-items: center; color: #fff; box-shadow: var(--shadow-md); display: flex;">
                  <h6 class="text-white mb-0 font-bold">Authors Table</h6>
                  <!-- Header Chart -->
@@ -172,7 +172,7 @@ function generateMiniBarChart() {
         </div>
 
         <!-- Projects Table -->
-        <div class="card">
+        <div class="card" style="margin-top: 3rem;">
             <div class="card-header-stats bg-info-grad" style="position: absolute; top: -20px; left: 1rem; right: 1rem; height: auto; min-height: auto; padding: 1rem; border-radius: 0.5rem; justify-content: space-between; align-items: center; color: #fff; box-shadow: var(--shadow-md); display: flex;">
                  <h6 class="text-white mb-0 font-bold">Projects Table</h6>
                  <!-- Header Chart -->
@@ -282,6 +282,6 @@ function generateMiniBarChart() {
 
 </div> <!-- Close Wrapper -->
 
-<script src="assets/js/script.js"></script>
+<script src="/dashboard/assets/js/script.js"></script>
 </body>
 </html>

@@ -9,7 +9,7 @@
     <ul class="sidebar-nav">
         <!-- Dashboard -->
         <li class="nav-item">
-            <a href="index.php" class="nav-link active">
+            <a href="/dashboard/index.php" class="nav-link active">
                 <i class="bi bi-speedometer2"></i>
                 Dashboard
             </a>
@@ -18,49 +18,89 @@
         <!-- Divider -->
         <li class="nav-divider">Management</li>
 
-        <!-- Tables -->
+
+        <!-- User Menu (Collapsible) -->
+       <li class="nav-item">
+  <a href="#userMenu" class="nav-link menu-collapse-toggle">
+    <i class="bi bi-people"></i>
+    <span>User</span>
+    <i class="bi bi-chevron-right ms-auto collapse-icon"></i>
+  </a>
+
+  <ul class="nav-submenu" id="userMenu">
+    <li><a href="/dashboard/user/profile.php">Profile</a></li>
+    <li><a href="/dashboard/user/cards.php">Cards</a></li>
+    <li><a href="/dashboard/user/list.php">List</a></li>
+    <li><a href="/dashboard/user/create.php">Create</a></li>
+    <li><a href="/dashboard/user/edit.php">Edit</a></li>
+    <li><a href="/dashboard/user/account.php">Account</a></li>
+  </ul>
+</li>
+
+
+
+        <!-- Tables (Collapsible) -->
         <li class="nav-item">
-            <a href="tables.php" class="nav-link">
-                <i class="bi bi-table"></i>
-                Tables
+            <a class="nav-link menu-collapse-toggle d-flex align-items-center" href="#tablesMenu">
+                <i class="bi bi-table me-2"></i>
+                <span>Tables</span>
+                <i class="bi bi-chevron-right ms-auto collapse-icon"></i>
             </a>
+            
+            <ul class="nav-submenu" id="tablesMenu">
+                <li><a href="/dashboard/tables/basic.php" class="nav-link">Basic Tables</a></li>
+                <li><a href="/dashboard/tables/advanced.php" class="nav-link">Advanced Tables</a></li>
+                <li><a href="/dashboard/tables/datagrid.php" class="nav-link">Data Grid</a></li>
+                <li><a href="/dashboard/tables/reports.php" class="nav-link">Reports</a></li>
+            </ul>
         </li>
-        <!-- Billing -->
+        <!-- Billing (Collapsible) -->
         <li class="nav-item">
-            <a href="billing.php" class="nav-link">
-                <i class="bi bi-receipt"></i>
-                Billing
+            <a class="nav-link menu-collapse-toggle d-flex align-items-center" href="#billingMenu">
+                <i class="bi bi-receipt me-2"></i>
+                <span>Billing</span>
+                <i class="bi bi-chevron-right ms-auto collapse-icon"></i>
             </a>
+            
+            <ul class="nav-submenu" id="billingMenu">
+                <li><a href="/dashboard/billing/general.php" class="nav-link">General</a></li>
+                <li><a href="/dashboard/billing/payment.php" class="nav-link">Payment Methods</a></li>
+                <li><a href="/dashboard/billing/invoices.php" class="nav-link">Invoices</a></li>
+            </ul>
         </li>
         
         <!-- Interactive -->
+        <!-- Virtual Reality (Collapsible) -->
         <li class="nav-item">
-            <a href="virtual-reality.php" class="nav-link">
-                <i class="bi bi-box-seam"></i>
-                Virtual Reality
+            <a class="nav-link menu-collapse-toggle d-flex align-items-center" href="#vrMenu">
+                <i class="bi bi-box-seam me-2"></i>
+                <span>Virtual Reality</span>
+                <i class="bi bi-chevron-right ms-auto collapse-icon"></i>
             </a>
+            
+            <ul class="nav-submenu" id="vrMenu">
+                <li><a href="/dashboard/virtual-reality/view.php" class="nav-link">VR View</a></li>
+            </ul>
         </li>
+
+
+        
 
         <!-- Divider -->
         <li class="nav-divider">Account Pages</li>
 
         <!-- Profile -->
-        <li class="nav-item">
-            <a href="profile.php" class="nav-link">
-                <i class="bi bi-person"></i>
-                Profile
-            </a>
-        </li>
+    
         <!-- Sign In -->
         <li class="nav-item">
-            <a href="login.php" class="nav-link">
+            <a href="/dashboard/login.php" class="nav-link">
                 <i class="bi bi-box-arrow-in-right"></i>
                 Sign In
             </a>
         </li>
         <!-- Sign Up -->
         <li class="nav-item">
-            <a href="sign-up.php" class="nav-link">
+            <a href="/dashboard/sign-up.php" class="nav-link">
                 <i class="bi bi-person-plus"></i>
                 Sign Up
             </a>
