@@ -27,7 +27,7 @@
         </li>
         <!-- Billing -->
         <li class="nav-item">
-            <a href="#" class="nav-link">
+            <a href="billing.php" class="nav-link">
                 <i class="bi bi-receipt"></i>
                 Billing
             </a>
